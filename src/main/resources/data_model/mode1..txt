@@ -1,0 +1,76 @@
+Sure! Here is an example of a more detailed schema with multiple classes and properties for a restaurant management software:
+
+Class: Restaurant
+
+Properties:
+
+name (string): the name of the restaurant
+address (string): the street address of the restaurant
+city (string): the city where the restaurant is located
+state (string): the state where the restaurant is located
+zipcode (string): the zip code of the restaurant's location
+phone (string): the phone number of the restaurant
+email (string): the email address of the restaurant
+website (string): the URL of the restaurant's website
+hours_of_operation (list of strings): a list of the restaurant's opening hours for each day of the week
+menu (list of MenuItem objects): a list of the menu items offered by the restaurant
+tables (list of Table objects): a list of the tables in the restaurant
+employees (list of Employee objects): a list of the employees who work at the restaurant
+orders (list of Order objects): a list of the orders placed by customers
+Class: MenuItem
+
+Properties:
+
+name (string): the name of the menu item
+description (string): a description of the menu item
+price (float): the price of the menu item
+category (string): the category of the menu item (e.g. appetizer, entree, dessert)
+image_url (string): the URL of an image of the menu item
+Class: Table
+
+Properties:
+
+number (int): the number of the table
+capacity (int): the maximum number of people that can be seated at the table
+status (string): the current status of the table (e.g. available, occupied, reserved)
+section (string): the section of the restaurant where the table is located
+description (string): a description of the table (e.g. near the window, next to the fireplace)
+Class: Employee
+
+Properties:
+
+name (string): the name of the employee
+position (string): the position of the employee (e.g. server, chef, manager)
+phone (string): the phone number of the employee
+email (string): the email address of the employee
+address (string): the street address of the employee
+city (string): the city where the employee lives
+state (string): the state where the employee lives
+zipcode (string): the zip code of the employee's address
+hire_date (datetime): the date the employee was hired
+hourly_rate (float): the hourly rate of the employee
+hours_worked (float): the total number of hours the employee has worked
+tip_share (float): the percentage of tips the employee receives from each order
+Class: Order
+
+Properties:
+
+table (Table object): the table where the order was placed
+items (list of MenuItem objects): a list of the menu items ordered
+timestamp (datetime): the time the order was placed
+status (string): the current status of the order (e.g. in progress, completed, cancelled)
+subtotal (float): the total cost of the items ordered before tax and tip
+tax_rate (float): the percentage of tax applied to the order
+tip_rate (float): the percentage of tip applied to the order
+total (float): the total cost of the order including tax and tip
+Class: Reservation
+
+Properties:
+
+table (Table object): the table reserved by the customer
+guest_count (int): the number of guests in the reservation
+date (datetime): the date of the reservation
+time (datetime): the time of the reservation
+duration
+
+
